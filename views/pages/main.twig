@@ -1,0 +1,27 @@
+{% extends "../base.twig" %}
+{% block stylesheet %}
+	<link rel="stylesheet" href="/css/style.css">
+
+{% endblock %}
+{% block title %}
+	<title>Start Page</title>
+{% endblock %}
+
+
+{% block header %}
+	{% include "../layout/header.twig" %}
+{% endblock %}
+{% block main %}
+	<main>
+		<div class="center-button">
+			<button class="style-button" type="button">
+				<p id="more">+</p>
+				<p id="new-list">Nouvelle liste</p>
+			</button>
+		</div>
+	</main>
+{% endblock %}
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="/js/main.js"></script>

@@ -1,0 +1,45 @@
+{% extends "../base.twig" %}
+{% block stylesheet %}
+	<link rel="stylesheet" href="/css/SettingPage.css">
+{% endblock %}
+{% block title %}
+	<title>SettingPage</title>
+{% endblock %}
+
+{% block main %}
+	<main>
+		<section>
+			<p class="line"></p>
+			<article id="section1">
+				<h2>Général</h2>
+				<h3>Thèmes</h3>
+				<h3>Notifications</h3>
+				<label class="toggle">
+					<span class="toggle-label">Bluetooth</span>
+					<input class="toggle-checkbox" type="checkbox" checked>
+					<div class="toggle-switch"></div>
+				</label>
+			</article>
+
+			<p class="line"></p>
+
+			<article id="section2">
+				<h2>Listes</h2>
+				<h3>paramètres de liste</h3>
+				<h3>Liste par défaut</h3>
+				<h3>Partage de liste</h3>
+			</article>
+
+			<p class="line"></p>
+
+			<article id="section3">
+				<h2>Compte d'utilisateur</h2>
+				<h3>Votre profil</h3>
+				<h3>Modifier le mot de passe</h3>
+				<h3>Déconnexion</h3>
+			</article>
+		</section>
+	</main>
+
+
+{% endblock %}

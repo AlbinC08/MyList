@@ -8,22 +8,21 @@ const userRouter = Router()
 
 userRouter.get("/", async (req, res) => {
     
-    res.render("./main.twig");
+    res.render("./pages/main.twig");
 })
-
 
 /********Display AddListPage *********/
 
-userRouter.get("/AddListPage", async (req, res) => {
+userRouter.get("/addListPage", async (req, res) => {
     
-    res.render("./AddListPage.twig");
+    res.render("./pages/addListPage.twig");
 })
 
 /** Page SettingPage */
 
-userRouter.get("/SettingPage", async (req, res) => {
+userRouter.get("/settingPage", async (req, res) => {
 
-    res.render("./SettingPage.twig");
+    res.render("./pages/settingPage.twig");
 })
 
 
