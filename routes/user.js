@@ -18,7 +18,7 @@ userRouter.get("/addListPage", async (req, res) => {
     res.render("./pages/addListPage.twig");
 })
 
-/** Page SettingPage */
+/********* Page SettingPage *********/
 
 userRouter.get("/settingPage", async (req, res) => {
 
@@ -26,7 +26,7 @@ userRouter.get("/settingPage", async (req, res) => {
 })
 
 
-/******** AddList *********/
+/********* AddList *********/
 
 userRouter.post('/AddList', async (req, res) => {
     try {
@@ -38,6 +38,20 @@ userRouter.post('/AddList', async (req, res) => {
         console.log(error);
         res.json(error)
     }
+})
+
+/********* Page Trash *********/
+
+userRouter.get("/trash", async (req, res) => {
+
+    res.render("./pages/trash.twig");
+})
+
+/********* Page Aide et Contact *********/
+
+userRouter.get("/help", async (req, res) => {
+
+    res.render("./pages/help.twig");
 })
 
 

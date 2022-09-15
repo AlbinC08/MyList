@@ -18,7 +18,7 @@ p {
     border-bottom: 1px black solid;
     margin: 30px;
     margin-top: 0;
-    
+
 }
 
 #Logotitle {
@@ -74,21 +74,21 @@ p {
 #prout a {
     text-decoration: none;
     color: rgb(2, 2, 2);
-    
+
 }
 
 /******** Section paramètre  ********/
 
-section{
+section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-     
-    
+
+
 }
 
-article{
+article {
     border: 1px solid black;
     width: 30%;
     color: white;
@@ -102,7 +102,7 @@ article h2 {
     padding-bottom: 5px;
 }
 
-.line{
+.line {
     margin-top: 15px;
     border: 1px solid rgba(0, 0, 0, 0.466);
     color: black;
@@ -115,9 +115,10 @@ article h2 {
     cursor: pointer;
     display: flex;
     justify-content: space-between;
-  }
-  
-  .toggle-switch {
+}
+
+
+.toggle-switch {
     display: inline-block;
     background: #ccc;
     border-radius: 16px;
@@ -127,11 +128,14 @@ article h2 {
     vertical-align: middle;
     transition: 0.25s;
     margin-right: 20px;
-  }
-  .toggle-switch:before, .toggle-switch:after {
+}
+
+.toggle-switch:before,
+.toggle-switch:after {
     content: "";
-  }
-  .toggle-switch:before {
+}
+
+.toggle-switch:before {
     display: block;
     background: linear-gradient(to bottom, #fff 0%, #eee 100%);
     border-radius: 50%;
@@ -142,52 +146,63 @@ article h2 {
     top: 4px;
     left: 4px;
     transition: left 0.25s;
-  }
-  .toggle:hover .toggle-switch:before {
+}
+
+.toggle:hover .toggle-switch:before {
     background: linear-gradient(to bottom, #fff 0%, #fff 100%);
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
-  }
-  .toggle-checkbox:checked + .toggle-switch {
+}
+
+.toggle-checkbox:checked+.toggle-switch {
     background: #56c080;
-  }
-  .toggle-checkbox:checked + .toggle-switch:before {
+}
+
+.toggle-checkbox:checked+.toggle-switch:before {
     left: 30px;
-  }
-  
-  .toggle-checkbox {
+}
+
+.toggle-checkbox {
     position: absolute;
     visibility: hidden;
-  }
-  
-  .toggle-label {
+}
+
+.toggle-label {
     position: relative;
     top: 2px;
     font-size: 28px;
     font-weight: 600;
-  }
+}
 
+.div-center {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-center img {
+    margin-right: 10px;
+}
 
 /******** Responsive Section/Article  ********/
 
-  @media screen and (max-width: 1095px) {
-    
-    article{
+@media screen and (max-width: 1095px) {
+
+    article {
         width: 391px;
     }
 
-    .line{
+    .line {
         width: 391px;
     }
 
 }
 
 @media screen and (max-width: 407px) {
-    
-    article{
+
+    article {
         width: 300px;
     }
 
-    .line{
+    .line {
         width: 300px;
     }
 

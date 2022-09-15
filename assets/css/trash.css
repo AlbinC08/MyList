@@ -1,0 +1,17 @@
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section img{
+    margin-bottom: 150px;
+    margin-top: 50px;
+}
+
+#big-p{
+    font-size: 32px;
+}
+
+#small-p{
+    font-size: 20px;
+}
