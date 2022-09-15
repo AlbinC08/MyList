@@ -1,0 +1,26 @@
+{% extends "../base.twig" %}
+
+{% block stylesheet %}
+	<link rel="stylesheet" href="/css/addProduct.css">
+{% endblock %}
+
+{% block title %}
+	<title>Start Page</title>
+{% endblock %}
+
+{% block header %}
+	{% include "../layout/header.twig" %}
+{% endblock %}
+
+{% block main %}
+	<main>
+		<div class="test4">
+			<div class="test6">
+				<input id="searchbar" onkeyup="search_product()" type="text" name="search" placeholder="Search products..">
+			</div>
+		</div>
+	</main>
+{% endblock %}
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="/js/main.js"></script>

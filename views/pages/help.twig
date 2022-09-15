@@ -1,0 +1,40 @@
+{% extends "../base.twig" %}
+
+{% block stylesheet %}
+	<link rel="stylesheet" href="/css/help.css">
+{% endblock %}
+
+{% block title %}
+	<title>Start Page</title>
+{% endblock %}
+
+{% block header %}
+	{% include "../layout/header.twig" %}
+{% endblock %}
+
+{% block main %}
+	<main>
+       <div id="form-contact">
+
+        <div id="contact" class="container p-lg-5 p-3 text-center">
+            <h2>Formulaire de contact</h2>
+            <form method="post" action="/">
+                <input type="text" id="yourname" name="yourname" placeholder="Votre Nom">
+
+                <input type="text" id="subject" name="subject" placeholder="Votre Adresse">
+
+                <input id="tel" type="tel" name="tel" placeholder="Votre Numero">
+
+                <input id="email" type="email" name="email" placeholder="Votre email">
+
+                <textarea id="message" name="message" placeholder="Votre message" style="height:200px"></textarea>
+
+                <input type="submit" value="Envoyer">
+            </form>
+        </div>
+    </div>
+    </main>
+{% endblock %}
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="/js/main.js"></script>
