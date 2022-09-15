@@ -77,6 +77,20 @@ p {
     
 }
 
+/******** liste ********/
+
+
+h3 {
+    
+    position: absolute;
+}
+
+.card-list {
+    position: relative;
+}
+
+
+
 /******** Boutton Nouvelle liste ********/
 
 .center-button {

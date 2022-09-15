@@ -7,8 +7,10 @@ const userRouter = Router()
 /********Display Page Home *********/
 
 userRouter.get("/", async (req, res) => {
-    
-    res.render("./pages/main.twig");
+    let List = await ListModel.find()
+    res.render("./pages/main.twig", {
+        List: List
+    });
 })
 
 /********Display AddListPage *********/

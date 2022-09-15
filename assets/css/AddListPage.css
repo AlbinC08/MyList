@@ -1,9 +1,34 @@
 #ListName {
     background-color: #1E877F!important;
     width: 90%;
+    margin-bottom: 20px;
+    border-top: #1E877F;
+
 }
 
 main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
+
+
+#img-list {
+
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+
+::placeholder {
+    color: #A8A7A7;
+    
+}
+

@@ -6,21 +6,29 @@
 {% block title %}
 	<title>AddListPage</title>
 {% endblock %}
+
+{% block header %}
+	{% include "../layout/header.twig" %}
+{% endblock %}
+
 {% block main %}
 	<main>
-		<img src="/images/1.png" data-src="/images/1.png" alt="" onclick='sendForm(this)'>
-		<img src="/images/2.png" data-src="/images/2.png" alt="" onclick='sendForm(this)'>
-		<img src="/images/3.png" data-src="/images/3.png" alt="" onclick='sendForm(this)'>
-		<img src="/images/4.png" data-src="/images/4.png" alt="" onclick='sendForm(this)'>
-		<img src="/images/5.png" data-src="/images/5.png" alt="" onclick='sendForm(this)'>
-		<img src="/images/6.png" data-src="/images/6.png" alt="" onclick='sendForm(this)'>
-		<img src="/images/7.png" data-src="/images/7.png" alt="" onclick='sendForm(this)'>
+
+
 		<form action="/AddList" method="post">
 			<input type="text" name="ListName" id="ListName" placeholder="Nom de la liste">
 			<input type="hidden" name="ListPicture" value="" id="ListPicture">
-			<button type="submit" class="btn btn-primary">envoyer</button>
 		</form>
+		<div id="img-list">
+			<img src="/images/1.png" data-src="/images/1.png" alt="" onclick='sendForm(this)'>
+			<img src="/images/2.png" data-src="/images/2.png" alt="" onclick='sendForm(this)'>
+			<img src="/images/3.png" data-src="/images/3.png" alt="" onclick='sendForm(this)'>
+			<img src="/images/4.png" data-src="/images/4.png" alt="" onclick='sendForm(this)'>
+			<img src="/images/5.png" data-src="/images/5.png" alt="" onclick='sendForm(this)'>
+			<img src="/images/6.png" data-src="/images/6.png" alt="" onclick='sendForm(this)'>
+			<img src="/images/7.png" data-src="/images/7.png" alt="" onclick='sendForm(this)'>
+		</div>
+
+
 	</main>
 {% endblock %}
-
-
