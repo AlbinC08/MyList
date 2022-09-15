@@ -1,0 +1,96 @@
+
+
+body {
+    background-color: #1E877F !important;
+}
+h1 {
+    color: white;
+    margin: 40px!important;
+}
+
+p {
+    color:white;
+}
+
+.navbar {
+    background-color: #1E877F;
+    border-bottom: 1px black solid;
+    margin: 30px;
+    margin-top: 0;
+   
+}
+
+#Logotitle {
+    width: 237px;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+
+#nav {
+    width: 10%;
+    display: flex;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: rgb(1, 1, 1);
+    opacity: 100%;
+  }
+
+  
+.bg-dark {
+    display: block;
+    justify-content: flex-start;
+    width: 20%;
+}
+
+.testnav {
+    display: none;
+}
+
+#prout {
+    z-index: 1;
+    position: absolute;
+    border: 1px solid black;
+    width: 300px;
+    font-size: 20px;
+    background-color: #28C3B7;
+    font-weight: 600;
+    height: 100%;
+}
+
+
+
+#test3 {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   height: 100%;
+}
+
+
+
+#prout a {
+    text-decoration: none;
+    color: rgb(2, 2, 2);
+    
+}
+
+
+@media screen and (max-width: 400px) {
+    #Logotitle {
+        width: 150px;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    #Logotitle {
+        width: 90px;
+    }
+
+}

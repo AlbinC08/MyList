@@ -1,0 +1,9 @@
+#AddListName {
+    background-color: #1E877F!important;
+    width: 90%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
