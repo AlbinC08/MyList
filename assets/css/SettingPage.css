@@ -1,0 +1,194 @@
+body {
+    background-color: #1E877F !important;
+}
+
+h1 {
+    color: white;
+    margin: 40px !important;
+}
+
+p {
+    color: white;
+}
+
+/******** NAVBAR ********/
+
+.navbar {
+    background-color: #1E877F;
+    border-bottom: 1px black solid;
+    margin: 30px;
+    margin-top: 0;
+    
+}
+
+#Logotitle {
+    width: 237px;
+}
+
+/******** Navbar/Menu ********/
+
+#menu {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+#nav {
+    width: 10%;
+    display: flex;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: rgb(1, 1, 1);
+    opacity: 100%;
+}
+
+.bg-dark {
+    display: block;
+    justify-content: flex-start;
+    width: 20%;
+}
+
+.testnav {
+    display: none;
+}
+
+#prout {
+    z-index: 1;
+    position: absolute;
+    border: 1px solid black;
+    width: 300px;
+    font-size: 20px;
+    background-color: #28C3B7;
+    font-weight: 600;
+    height: 100%;
+}
+
+#test3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+#prout a {
+    text-decoration: none;
+    color: rgb(2, 2, 2);
+    
+}
+
+/******** Section paramètre  ********/
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     
+    
+}
+
+article{
+    border: 1px solid black;
+    width: 30%;
+    color: white;
+    padding-left: 10px;
+    background-color: rgba(0, 0, 0, 0.30);
+
+}
+
+article h2 {
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+.line{
+    margin-top: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.466);
+    color: black;
+    width: 30%;
+}
+
+/******** toggle article  ********/
+
+.toggle {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .toggle-switch {
+    display: inline-block;
+    background: #ccc;
+    border-radius: 16px;
+    width: 58px;
+    height: 32px;
+    position: relative;
+    vertical-align: middle;
+    transition: 0.25s;
+    margin-right: 20px;
+  }
+  .toggle-switch:before, .toggle-switch:after {
+    content: "";
+  }
+  .toggle-switch:before {
+    display: block;
+    background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: left 0.25s;
+  }
+  .toggle:hover .toggle-switch:before {
+    background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+  }
+  .toggle-checkbox:checked + .toggle-switch {
+    background: #56c080;
+  }
+  .toggle-checkbox:checked + .toggle-switch:before {
+    left: 30px;
+  }
+  
+  .toggle-checkbox {
+    position: absolute;
+    visibility: hidden;
+  }
+  
+  .toggle-label {
+    position: relative;
+    top: 2px;
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+
+/******** Responsive Section/Article  ********/
+
+  @media screen and (max-width: 1095px) {
+    
+    article{
+        width: 391px;
+    }
+
+    .line{
+        width: 391px;
+    }
+
+}
+
+@media screen and (max-width: 407px) {
+    
+    article{
+        width: 300px;
+    }
+
+    .line{
+        width: 300px;
+    }
+
+}
