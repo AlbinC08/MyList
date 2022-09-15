@@ -33,7 +33,6 @@ userRouter.post('/AddList', async (req, res) => {
     try {
         let List = new ListModel(req.body)
         await List.save()
-        res.json(List)
         console.log(List);
         res.redirect('/')
     } catch (error) {

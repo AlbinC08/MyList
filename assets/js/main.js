@@ -22,6 +22,6 @@ function leftStart() {
         prout.classList.add('d-none');
         prout.classList.remove('animate__bounceInLeft')
     }
-  
 }
+
 
