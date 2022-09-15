@@ -54,6 +54,13 @@ userRouter.get("/help", async (req, res) => {
     res.render("./pages/help.twig");
 })
 
+/********* Page addProduct *********/
+
+userRouter.get("/addProduct", async (req, res) => {
+
+    res.render("./pages/addProduct.twig");
+})
+
 
 
 export default userRouter
