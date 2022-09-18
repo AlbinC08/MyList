@@ -1,82 +1,3 @@
-body {
-    background-color: #1E877F !important;
-}
-
-h1 {
-    color: white;
-    margin: 40px !important;
-}
-
-p {
-    color: white;
-}
-
-/******** NAVBAR ********/
-
-.navbar {
-    background-color: #1E877F;
-    border-bottom: 1px black solid;
-    margin: 30px;
-    margin-top: 0;
-
-}
-
-#Logotitle {
-    width: 237px;
-}
-
-/******** Navbar/Menu ********/
-
-#menu {
-    display: flex;
-    justify-content: center;
-    width: 90%;
-}
-
-#nav {
-    width: 10%;
-    display: flex;
-}
-
-.custom-toggler.navbar-toggler {
-    border-color: rgb(1, 1, 1);
-    opacity: 100%;
-}
-
-.bg-dark {
-    display: block;
-    justify-content: flex-start;
-    width: 20%;
-}
-
-.testnav {
-    display: none;
-}
-
-#prout {
-    z-index: 1;
-    position: absolute;
-    border: 1px solid black;
-    width: 300px;
-    font-size: 20px;
-    background-color: #28C3B7;
-    font-weight: 600;
-    height: 100%;
-}
-
-#test3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
-}
-
-#prout a {
-    text-decoration: none;
-    color: rgb(2, 2, 2);
-
-}
-
 /******** Section paramètre  ********/
 
 section {
@@ -84,13 +5,14 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    margin-bottom: 210px;
 
 }
 
 article {
-    border: 1px solid black;
-    width: 30%;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 390px;
     color: white;
     padding-left: 10px;
     background-color: rgba(0, 0, 0, 0.30);
@@ -100,13 +22,14 @@ article {
 article h2 {
     border-bottom: 1px solid black;
     padding-bottom: 5px;
+    margin-right: 10px
 }
 
 .line {
     margin-top: 15px;
-    border: 1px solid rgba(0, 0, 0, 0.466);
+    border-top: 1px solid rgba(0, 0, 0, 0.466);
     color: black;
-    width: 30%;
+    width: 390px;
 }
 
 /******** toggle article  ********/
@@ -115,6 +38,7 @@ article h2 {
     cursor: pointer;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 8px;
 }
 
 
@@ -128,6 +52,7 @@ article h2 {
     vertical-align: middle;
     transition: 0.25s;
     margin-right: 20px;
+    margin-top: 10px;
 }
 
 .toggle-switch:before,
@@ -155,6 +80,7 @@ article h2 {
 
 .toggle-checkbox:checked+.toggle-switch {
     background: #56c080;
+    margin-top: 10px;
 }
 
 .toggle-checkbox:checked+.toggle-switch:before {
@@ -179,6 +105,7 @@ article h2 {
 }
 
 .div-center img {
+    height: 42px;
     margin-right: 10px;
 }
 
@@ -204,6 +131,18 @@ article h2 {
 
     .line {
         width: 300px;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+
+    article {
+        width: 260px;
+    }
+
+    .line {
+        width: 260px;
     }
 
 }

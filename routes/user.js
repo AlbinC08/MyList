@@ -20,6 +20,13 @@ userRouter.get("/addListPage", async (req, res) => {
     res.render("./pages/addListPage.twig");
 })
 
+/********Display ListPage *********/
+
+userRouter.get("/listPage", async (req, res) => {
+    
+    res.render("./pages/listPage.twig");
+})
+
 /********* Page SettingPage *********/
 
 userRouter.get("/settingPage", async (req, res) => {

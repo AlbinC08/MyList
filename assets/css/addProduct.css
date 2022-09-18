@@ -5,12 +5,65 @@
 
 }
 
-.test5{
-    
-    
+.searchBox {
+    width: 402px;
+    height: 57px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 11px;
+}
+
+.searchBox img {
+    margin-right: 10px;
 }
 
 #searchbar {
-    width: 100%;
+    width: 326px;
+    height: 46px;
+    border-radius: 10px;
+    background-color: #313030;
+    border: none;
+}
 
+
+/******** Responsive searchbar ********/
+
+@media screen and (max-width: 428px) {
+    .searchBox {
+        width: 380px;
+    }
+}
+
+@media screen and (max-width: 396px) {
+    .searchBox {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .searchBox {
+        width: 330px;
+    }
+}
+
+@media screen and (max-width: 356px) {
+    .searchBox {
+        width: 310px;
+    }
+}
+
+@media screen and (max-width: 336px) {
+    .searchBox {
+        width: 290px;
+    }
+}
+
+@media screen and (max-width: 316px) {
+    .searchBox {
+        width: 270px;
+    }
 }

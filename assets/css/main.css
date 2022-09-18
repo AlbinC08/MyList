@@ -1,0 +1,147 @@
+/******** liste ********/
+
+
+h3 {
+    color: white;
+    position: absolute;
+    margin-top: 22px;
+    margin-left: 20px;
+}
+
+.list {
+    position: relative;
+    width: 402px;
+    height: 144px;
+    border-radius: 25px;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.25);
+    margin: 13px;
+
+}
+
+.list img {
+    width: 100%;
+    height: 100%;
+}
+
+#lists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+/******** Boutton Nouvelle liste ********/
+
+.center-button {
+    display: flex;
+    justify-content: center;
+    justify-items: end;
+}
+
+.style-button {
+    border: none;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin-top: 52px;
+    margin-bottom: 173px;
+}
+
+#more {
+    font-size: 60px;
+    color: black;
+    margin-right: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#new-list {
+    color: black;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/******** Responsive boutton NOUVELLE LISTE ********/
+
+@media screen and (max-width: 1635px) {
+
+    .style-button {
+        width: 318px;
+        height: 114px;
+    }
+
+    #more {
+        font-size: 30px;
+        margin-right: 10px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+
+    #new-list {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+}
+
+@media screen and (max-width: 316px) {
+    .style-button {
+        width: 270px;
+        height: 97px;
+    }
+}
+
+/******** Responsive searchbar ********/
+
+@media screen and (max-width: 428px) {
+    .list {
+        width: 380px;
+        height: 136px;
+    }
+}
+
+@media screen and (max-width: 396px) {
+    .list {
+        width: 350px;
+        height: 125px;
+
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .list {
+        width: 330px;
+        height: 118px;
+    }
+}
+
+@media screen and (max-width: 356px) {
+    .list {
+        width: 310px;
+        height: 111px;
+    }
+}
+
+@media screen and (max-width: 336px) {
+    .list {
+        width: 290px;
+        height: 104px;
+    }
+}
+
+@media screen and (max-width: 316px) {
+    .list {
+        width: 260px;
+        height: 93px;
+    }
+}

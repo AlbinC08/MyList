@@ -1,0 +1,26 @@
+{% extends "../base.twig" %}
+
+{% block stylesheet %}
+	<link rel="stylesheet" href="/css/listPage.css">
+{% endblock %}
+
+{% block title %}
+	<title>List Page</title>
+{% endblock %}
+
+{% block nav %}
+{% include "../layout/nav.twig" %}
+<form action="/addProduct" method="get">
+<button id="addButton" type="submit">
+<img src="../images/iconAddToShoppingCart.png" alt="">
+</button>
+</form>
+{% endblock %}
+
+
+{% block main %}
+
+
+
+
+{% endblock %}

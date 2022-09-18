@@ -1,11 +1,3 @@
-#ListName {
-    background-color: #1E877F!important;
-    width: 90%;
-    margin-bottom: 20px;
-    border-top: #1E877F;
-
-}
-
 main {
     display: flex;
     flex-direction: column;
@@ -13,22 +5,54 @@ main {
 }
 
 
-#img-list {
-
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-}
-
-
+/*********List Name********/
 form {
     display: flex;
     justify-content: center;
 }
 
+#ListName {
+    background-color: #1E877F;
+    width: 90%;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#ListName[type=text]:focus {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    box-shadow: 0 0 0 30px #1E877F inset !important;
+    -webkit-text-fill-color: #A8A7A7 !important;
+}
 
 ::placeholder {
     color: #A8A7A7;
-    
 }
+
+/**********Image List**********/
+
+#img-list {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#img-list img {
+    width: 173px;
+    height: 62px;
+    border-radius: 10px;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.25);
+    margin: 13px;
+}
+
+
 
