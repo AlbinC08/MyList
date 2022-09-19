@@ -33,6 +33,12 @@ userRouter.get("/help", async (req, res) => {
     res.render("./pages/help.twig");
 })
 
+/********* Page Form register *********/
+
+userRouter.get("/formRegister", async (req, res) => {
+
+    res.render("./pages/formRegister.twig");
+})
 
 
 
