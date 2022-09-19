@@ -1,5 +1,6 @@
 import { Router } from 'express';
-import ListModel from "../models/list.js";
+import UserController from '../controllers/userController.js';
+
 
 const userRouter = Router()
 
@@ -39,6 +40,15 @@ userRouter.get("/formRegister", async (req, res) => {
 
     res.render("./pages/formRegister.twig");
 })
+
+userRouter.post('/formRegister', async (req, res) => {
+    try {
+        await UserController.subscribe(req)
+        res.redirect('/');/********* REDIRECT = REDIRIGE vers la route "page utilisateur" ***********/  /******** ON PEUT REDIRIGER QUE VERS DES ROUTE ********/
+    } catch (error) {
+        res.send(error);
+    }
+});
 
 
 

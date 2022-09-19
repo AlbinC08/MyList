@@ -11,7 +11,7 @@ const ListSchema = new mongoose.Schema({
         required: [true, "Pas d'mage"]
     },
     ListProduct: {
-        type:String,
+        type: [{ type : mongoose.Schema.Types.ObjectId, ref: 'Product' }],
     }
 })
 

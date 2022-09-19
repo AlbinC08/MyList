@@ -7,8 +7,8 @@ const productSchema = new mongoose.Schema({
         required: [true, "Pas de nom de produit"]
     },
     list: {
-        type: String,
-        default: "default"
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "List",
     },
 })
 

@@ -19,7 +19,6 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: [true, "pas de mot de passe"]
     },
-    pokemon: []
 })
 
 const userModel = mongoose.model('user', userSchema)

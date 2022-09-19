@@ -1,7 +1,7 @@
 {% extends "../base.twig" %}
 
 {% block stylesheet %}
-	<link rel="stylesheet" href="/css/help.css">
+	<link rel="stylesheet" href="/css/formRegister.css">
 {% endblock %}
 
 {% block title %}
@@ -9,24 +9,25 @@
 {% endblock %}
 {% block main %}
 	<main>
-       <div id="form-register">
+		<div id="form-contact">
+			<div id="contact" class="container p-lg-5 p-3 text-center">
 
-        <div id="register" class="container p-lg-5 p-3 text-center">
-            <h2>Formulaire de contact</h2>
-            <form method="post" action="/">
-                <input type="text" id="yourname" name="yourname" placeholder="Votre Nom">
+				<h2>Formulaire d'inscription</h2>
 
-                <input type="text" id="subject" name="subject" placeholder="Votre Adresse">
+				<form action="/formRegister/{{user.id}}" method="post">
 
-                <input id="tel" type="tel" name="tel" placeholder="Votre Numero">
+					<input type="text" id="name" name="name" placeholder="Votre Nom">
 
-                <input id="email" type="email" name="email" placeholder="Votre email">
+					<input type="text" id="firstname" name="firstname" placeholder="Votre Prenom">
 
-                <textarea id="message" name="message" placeholder="Votre message" style="height:200px"></textarea>
+					<input type="mail" id="mail" name="mail" placeholder="Votre email">
 
-                <input type="submit" value="Envoyer">
-            </form>
-        </div>
-    </div>
-    </main>
+					<input type="password" id="password" name="password" placeholder="Mot de passe">
+
+					<input type="submit" value="Envoyer">
+
+				</form>
+			</div>
+		</div>
+	</main>
 {% endblock %}

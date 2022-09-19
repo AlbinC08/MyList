@@ -11,12 +11,17 @@
 {% block main %}
 	<main>
 		<div class="test4">
-			<form action="/addProduct/{{listId}}" method="post" class="searchBox">
+			<form action="/addProduct/{{list.id}}" method="post" class="searchBox">
 				<img src="/images/iconSearch.png" alt="">
-				<input id="searchbar" onkeyup="search_product()" type="text" name="search" placeholder="Rechercher/ajouter un article">
+				<input id="searchbar" onkeyup="search_product()" type="text" name="productName" placeholder="Rechercher/ajouter un article">
 			</form>
 		</div>
+
+		{% for product in products %}
+			{{product.productName}}
+		{% endfor %}
 	</main>
 {% endblock %}
+
 
 <script src="/js/main.js"></script>
