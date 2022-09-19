@@ -1,0 +1,65 @@
+#section-register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#article-register {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#article-register img {
+    margin-bottom: 10%;
+}
+
+#bouttons-register div {
+    margin-bottom: 5%;
+    
+}
+
+#bouttons-register div p {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+}
+
+#bouttons-register img {
+    width: 30px;
+    height: 30px;
+    margin-top: 7px;
+}
+
+#bouttonFace {
+    border: 1px none black;
+    border-radius: 20px;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-around;
+    width: 250px;
+    background-color: #3B5998;
+
+}
+
+#bouttonGoogle {
+    border: 1px none black;
+    border-radius: 20px;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-around;
+    background-color: #4285F4;
+     
+}
+
+#bouttonMail {
+    border: 1px none black;
+    border-radius: 20px;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-around;
+    background-color: #A39D9D;
+    
+}
