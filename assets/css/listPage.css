@@ -9,4 +9,13 @@
 
 
 
+#listName {
+    padding: 10px;
+    border-bottom: 1px solid black;
+    margin: 0px 30px 0px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
 

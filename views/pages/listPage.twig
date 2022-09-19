@@ -10,11 +10,17 @@
 
 {% block nav %}
 	{% include "../layout/nav.twig" %}
-	<form action="/addProduct/{{idlist}}" method="get">
+	<form action="/addProduct/{{list.id}}" method="get">
 		<button id="addButton" type="submit">
 			<img src="../images/iconAddToShoppingCart.png" alt="">
 		</button>
 	</form>
 {% endblock %}
 
-{% block main %}{% endblock %}
+{% block main %}
+
+
+	<h2 id="listName">{{ list.ListName }}</h2>
+
+
+{% endblock %}
