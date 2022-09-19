@@ -7,14 +7,8 @@
 	<title>Start Page</title>
 {% endblock %}
 
-
-{% block header %}
-	{% include "../layout/header.twig" %}
-{% endblock %}
 {% block main %}
 	<main>
-
-
 		<div id="lists">
 			{% for list in List %}
 				<form  action="/listPage" method="get">
@@ -22,22 +16,16 @@
 						<h3>{{ list.ListName }}</h3>
 						<img src="{{ list.ListPicture }}" alt="">
 					</button>
-
 				</form>
 			{% endfor %}
 
 		</div>
-
-
-		
 			<form action="/addListPage" method="get" class="center-button">
 				<button class="style-button" type="submit">
 					<p id="more">+</p>
 					<p id="new-list">Nouvelle liste</p>
 				</button>
-			</form>
-
-		
+			</form>	
 	</main>
 {% endblock %}
 
