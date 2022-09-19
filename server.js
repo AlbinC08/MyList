@@ -1,6 +1,8 @@
 import express from 'express';
 import mongoose from "mongoose";
 import userRouter from './routes/user.js';
+import listRouter from './routes/list.js';
+import productRouter from './routes/product.js';
 import cors from 'cors';
 import session from 'express-session';
 import 'dotenv/config';
@@ -16,6 +18,8 @@ app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 app.use(router)
 router.use(userRouter)
+router.use(listRouter)
+router.use(productRouter)
 
 
 

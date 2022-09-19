@@ -1,6 +1,11 @@
 import { Router } from 'express';
 import productModel from "../models/productModel.js";
 
+const productRouter = Router()
+
+
+/********* add Product *********/
+
 
 productRouter.post('/addProduct/:idList', async (req, res) => {
     try {
@@ -13,15 +18,11 @@ productRouter.post('/addProduct/:idList', async (req, res) => {
     }
 });
 
+/********* display Page addProduct *********/
 
-userRouter.post('/AddList', async (req, res) => {
-    try {
-        let List = new ListModel(req.body)
-        await List.save()
-        console.log(List);
-        res.redirect('/')
-    } catch (error) {
-        console.log(error);
-        res.json(error)
-    }
+productRouter.get("/addProduct/:idList", async (req, res) => {
+
+    res.render("./pages/addProduct.twig");
 })
+
+export default productRouter
