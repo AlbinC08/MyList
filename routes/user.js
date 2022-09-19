@@ -29,11 +29,25 @@ userRouter.get("/listPage/:idlist", async (req, res) => {
     });
 })
 
-/********* Page SettingPage *********/
+/********* display SettingPage *********/
 
 userRouter.get("/settingPage", async (req, res) => {
 
     res.render("./pages/settingPage.twig");
+})
+
+/********* display registerPage *********/
+
+userRouter.get("/registerPage", async (req, res) => {
+
+    res.render("./pages/registerPage.twig");
+})
+
+/********* display connexionPage *********/
+
+userRouter.get("/connexionPage", async (req, res) => {
+
+    res.render("./pages/connexionPage.twig");
 })
 
 

@@ -7,17 +7,11 @@
 	<title>Start Page</title>
 {% endblock %}
 
-
-{% block header %}
-	{% include "../layout/header.twig" %}
-{% endblock %}
 {% block main %}
 	<main>
-
-
 		<div id="lists">
 			{% for list in List %}
-				<div  method="get">
+				<div>
 					<a href="/listPage/{{list.id}}">
 						<button class="list" type="submit">
 							<h3>{{ list.ListName }}</h3>
