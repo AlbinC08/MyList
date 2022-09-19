@@ -17,27 +17,28 @@
 
 		<div id="lists">
 			{% for list in List %}
-				<form  action="/listPage" method="get">
-					<button class="list" type="submit">
-						<h3>{{ list.ListName }}</h3>
-						<img src="{{ list.ListPicture }}" alt="">
-					</button>
+				<div  method="get">
+					<a href="/listPage/{{list.id}}">
+						<button class="list" type="submit">
+							<h3>{{ list.ListName }}</h3>
+							<img src="{{ list.ListPicture }}" alt="">
+						</button>
+					</a>
 
-				</form>
+				</div>
 			{% endfor %}
 
 		</div>
 
 
-		
-			<form action="/addListPage" method="get" class="center-button">
-				<button class="style-button" type="submit">
-					<p id="more">+</p>
-					<p id="new-list">Nouvelle liste</p>
-				</button>
-			</form>
+		<form action="/addListPage" method="get" class="center-button">
+			<button class="style-button" type="submit">
+				<p id="more">+</p>
+				<p id="new-list">Nouvelle liste</p>
+			</button>
+		</form>
 
-		
+
 	</main>
 {% endblock %}
 

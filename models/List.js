@@ -9,6 +9,9 @@ const ListSchema = new mongoose.Schema({
     ListPicture: {
         type:String,
         required: [true, "Pas d'mage"]
+    },
+    ListProduct: {
+        type:String,
     }
 })
 

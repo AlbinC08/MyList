@@ -11,10 +11,10 @@
 {% block main %}
 	<main>
 		<div class="test4">
-			<div class="searchBox">
-			<img src="/images/iconSearch.png" alt="">
+			<form action="/addProduct/{{listId}}" method="post" class="searchBox">
+				<img src="/images/iconSearch.png" alt="">
 				<input id="searchbar" onkeyup="search_product()" type="text" name="search" placeholder="Rechercher/ajouter un article">
-			</div>
+			</form>
 		</div>
 	</main>
 {% endblock %}

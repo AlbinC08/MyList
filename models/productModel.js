@@ -6,6 +6,10 @@ const productSchema = new mongoose.Schema({
         type:String,
         required: [true, "Pas de nom de produit"]
     },
+    list: {
+        type: String,
+        default: "default"
+    },
 })
 
 const ListModel = mongoose.model('List', productSchema)

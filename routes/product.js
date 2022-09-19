@@ -2,11 +2,11 @@ import { Router } from 'express';
 import productModel from "../models/productModel.js";
 
 
-productRouter.post('/addProduct', async (req, res) => {
+productRouter.post('/addProduct/:idList', async (req, res) => {
     try {
         let product = new productModel(req.body)
         await product.save()
-        res.redirect('/')
+        res.redirect('/addProduct')
     } catch (error) {
         console.log(error);
         res.json(error)

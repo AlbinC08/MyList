@@ -10,7 +10,7 @@
 
 {% block nav %}
 {% include "../layout/nav.twig" %}
-<form action="/addProduct" method="get">
+<form action="/addProduct/{{idlist}}" method="get">
 <button id="addButton" type="submit">
 <img src="../images/iconAddToShoppingCart.png" alt="">
 </button>

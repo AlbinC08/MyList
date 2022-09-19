@@ -22,9 +22,11 @@ userRouter.get("/addListPage", async (req, res) => {
 
 /********Display ListPage *********/
 
-userRouter.get("/listPage", async (req, res) => {
+userRouter.get("/listPage/:idlist", async (req, res) => {
     
-    res.render("./pages/listPage.twig");
+    res.render("./pages/listPage.twig",{
+        idlist: req.params.idlist
+    });
 })
 
 /********* Page SettingPage *********/
@@ -65,7 +67,7 @@ userRouter.get("/help", async (req, res) => {
 
 /********* Page addProduct *********/
 
-userRouter.get("/addProduct", async (req, res) => {
+userRouter.get("/addProduct/:idList", async (req, res) => {
 
     res.render("./pages/addProduct.twig");
 })
