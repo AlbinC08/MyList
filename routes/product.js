@@ -25,12 +25,11 @@ productRouter.post('/addProduct/:idList', async (req, res) => {
         let product = new productModel(req.body)
         await product.save()
         await ListModel.updateOne({ _id: req.params.idList }, { $push: { ListProduct: product._id } })
-        res.redirect('/addProduct')
+        res.redirect(req.get('referer'));
     } catch (error) {
         console.log(error);
         res.json(error)
     }
 });
-
 
 export default productRouter

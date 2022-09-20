@@ -5,6 +5,11 @@
 
 }
 
+#aaa  {
+    display: flex;
+    justify-content: center;
+}
+
 .searchBox {
     width: 402px;
     height: 57px;
@@ -27,6 +32,51 @@
     border-radius: 10px;
     background-color: #313030;
     border: none;
+    color: white;
+}
+
+#styleProduct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom:1% ;
+    background-color: black;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.25);
+    color: white;
+    font-size: x-large;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#center-product {
+    width: 850px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+@media screen and (max-width: 856px) {
+    #center-product {
+        width: 100%;     
+    }
+}
+
+@media screen and (max-width: 430px) {
+    #center-product {
+        width: 100%;     
+        display: inline-block;
+     
+    }
+
+    #styleProduct {
+      width: 100%;
+      margin-left: 0%;
+    }    
 }
 
 
