@@ -14,9 +14,11 @@ listRouter.get("/addListPage", async (req, res) => {
 /********Display ListPage *********/
 
 listRouter.get("/listPage/:idlist", async (req, res) => {
-    let list = await ListModel.findOne({_id: req.params.idlist})
+    let list = await ListModel.findOne({_id: req.params.idlist}).populate('ListProduct')
+    let products = list.ListProduct;
     res.render("./pages/listPage.twig",{
-        list: list
+        list: list,
+        products: products
     });
 })
 
