@@ -9,24 +9,24 @@
 {% endblock %}
 
 {% block main %}
-<div id="aaa">
-	<main>
-		<div class="test4">
-			<form action="/addProduct/{{list.id}}" method="post" class="searchBox">
-				<img src="/images/iconSearch.png" alt="">
-				<input id="searchbar" onkeyup="search_product()" type="text" name="productName" placeholder="Rechercher/ajouter un article">
-			</form>
-		</div>
-        <div id="center-product">
-		{% for product in products %}
-			<div id="styleProduct">
-				{{product.productName}}
+	<div id="aaa">
+		<main>
+			<div class="test4">
+				<form action="/addProduct/{{list.id}}" method="post" class="searchBox">
+					<img src="/images/iconSearch.png" alt="">
+					<input id="searchbar" onkeyup="search_product()" type="text" name="productName" placeholder="Rechercher/ajouter un article">
+				</form>
 			</div>
-		{% endfor %}
-		</div>
+			<div id="center-product">
+				{% for product in products %}
+					<div id="styleProduct">
+						{{product.productName}}
+					</div>
+				{% endfor %}
+			</div>
 
-	</main>
-</div>
+		</main>
+	</div>
 {% endblock %}
 
 
