@@ -5,12 +5,21 @@
     justify-content: center;
 }
 
-
+.container-drop{
+    position: relative ;
+    width: 400px;
+    height: 60px;
+    transition-property: height;
+    transition-duration: 4s;
+}
 
 
 #styleProduct {
+    position: absolute;
+    z-index: 2;
+
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 400px;
     height: 50px;
@@ -25,12 +34,31 @@
     margin-right: 10px;
 }
 
+#drop{
+    
+    position: absolute;
+    top:60px;
+    z-index: 1;
+    background-color: blue;
+    width: 400px;
+    height: 50px;
+}
+
+.drop-animated{
+    height: 120px;
+}
+
 #center-product {
     width: 850px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 10%;
+}
+
+.center-img {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 @media screen and (max-width: 856px) {

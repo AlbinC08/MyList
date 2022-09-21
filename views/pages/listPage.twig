@@ -19,20 +19,37 @@
 
 {% block main %}
 
-
 	<h2 id="listName">{{ list.ListName }}</h2>
 
 	<div id="aaa">
-		
-			<div id="center-product">
-				{% for product in products %}
+		<div id="center-product">
+			{% for product in products %}
+				<div class="container-drop">
 					<div id="styleProduct">
+						<div class="center-img">
+							<img src="../images/icon-tomate.png" alt="modif">
+						</div>
 						{{product.productName}}
-					</div>
-				{% endfor %}
-			</div>
-		
+						<div class="center-img ">
+							<img src="../images/icon-modif.png" alt="modif" onclick="settingProductDown()" id='arrow'>
+						</div>
 
+					</div>
+
+					<div class="drop animate__animated d-none" id="drop">
+						<div class="center-img ">
+							<img src="../images/icon-modif.png" alt="modif">
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
 	</div>
 
+{% endblock %}
+
+
+{% block script %}
+	<script src="/js/animateProduct.js"></script>
+	<script src="/js/main.js"></script>
 {% endblock %}
